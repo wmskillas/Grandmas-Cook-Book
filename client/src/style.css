@@ -1,0 +1,41 @@
+* {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+nav {
+    background-color: #91C07D;
+    display: flex;
+    text-align: center;
+}
+
+nav li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    color: #91C07D;
+    background-color: #322315;
+    padding: 5px;
+    margin: 5px;
+    display: block;
+    justify-content: right;
+    justify-items: end;
+}
+
+nav h1 {
+    display: flex;
+    justify-content: left;
+    margin: 10px;
+    font-size: 4rem;
+    font-style: italic;
+}
+
+
+body {
+    background-color: #8C6042;
+}
+
+.icon {
+    width: 15rem;
+    margin: 30px;
+}
