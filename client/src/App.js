@@ -5,12 +5,15 @@ import Navbar from "./components/Navbar"
 function App() {
   const [pages] = useState([
     {
-      name: "add recipe"
+      name: "Add Recipe"
     },
-    { name: "breakfast" },
-    { name: "lunch" },
+    { name: "Breakfast" },
+    { name: "Lunch" },
     {
-      name: "dinner"
+      name: "Dinner"
+    },
+    {
+      name: 'Login'
     }
   ]);
 
@@ -18,13 +21,13 @@ function App() {
 
   return (
     <div>
-      
+     
         <Navbar
           pages={pages}
           setCurrentPage={setCurrentPage}
           currentPage={currentPage}
         ></Navbar>
-     
+    
       <main>
         <Page currentPage={currentPage}></Page>
       </main>
