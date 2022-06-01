@@ -10,13 +10,13 @@ function Page({ currentPage }) {
 
   const renderPage = () => {
     switch (currentPage.name) {
-      case 'about me':
+      case 'add_recipe':
         return <AddRecipe />;
-      case 'portfolio':
+      case 'breakfast':
         return <Breakfast />;
-      case 'contact':
+      case 'lunch':
         return <Lunch />;
-      case 'resume':
+      case 'dinner':
         return <Dinner />;
       default:
         return <AddRecipe />;
