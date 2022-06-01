@@ -10,7 +10,7 @@ function Page({ currentPage }) {
 
   const renderPage = () => {
     switch (currentPage.name) {
-      case 'add_recipe':
+      case 'add recipe':
         return <AddRecipe />;
       case 'breakfast':
         return <Breakfast />;

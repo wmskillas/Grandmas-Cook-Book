@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar"
 function App() {
   const [pages] = useState([
     {
-      name: "add_recipe"
+      name: "add recipe"
     },
     { name: "breakfast" },
     { name: "lunch" },
