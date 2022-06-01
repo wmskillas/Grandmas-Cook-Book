@@ -79,6 +79,7 @@
 
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../utils/helpers';
+import Icon from "../assets/images/GCBLS.png" 
 
 function Nav(props) {
   const {
@@ -93,6 +94,9 @@ function Nav(props) {
 
   return (    
       <nav>
+        <div>
+          <img className='icon' alt='grandmas-cook-book.img' src={Icon}></img>
+        </div>
         <ul className="flex-row">
           {pages.map((Page) => (
             <li
@@ -112,5 +116,4 @@ function Nav(props) {
       </nav>
   );
 }
-
 export default Nav;
