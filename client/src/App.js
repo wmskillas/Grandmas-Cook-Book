@@ -7,27 +7,31 @@ import "../src/style.css"
 function App() {
   const [pages] = useState([
     {
-      name: "add recipe"
+      name: "Add Recipe"
     },
-    { name: "breakfast" },
-    { name: "lunch" },
+    { name: "Breakfast" },
+    { name: "Lunch" },
     {
-      name: "dinner"
+      name: "Dinner"
+    },
+    {
+      name: 'Login'
     }
   ]);
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
-    <div className="">
-      
+    
         <Navbar
           pages={pages}
           setCurrentPage={setCurrentPage}
           currentPage={currentPage}
         ></Navbar>
+
      
       <main className="container">
+
         <Page currentPage={currentPage}></Page>
       </main>
      

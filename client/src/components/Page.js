@@ -25,7 +25,7 @@ function Page({ currentPage }) {
 
   return (
     <section>
-      <h2>{capitalizeFirstLetter(currentPage.name)}</h2>
+      <h2 id='pagename'>{capitalizeFirstLetter(currentPage.name)}</h2>
       <PageContent>{renderPage()}</PageContent>
     </section>
   );
