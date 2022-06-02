@@ -11,7 +11,7 @@ const {
   saveRecipe,
   deleteRecipe,
   login,
-} = require("../../controllers/user-contoller");
+} = require("../../controllers/user-controller");
 const { authMiddleware } = require("../../utils/auth");
 
 router
