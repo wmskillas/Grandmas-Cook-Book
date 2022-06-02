@@ -2,9 +2,19 @@ import React from 'react';
 function Breakfast(){
     return(
         <section class="breakfast">
-            <h1>Breakfast</h1>
-            <div className='flex-row'>
-                {/* {Breakfast} */}
+            
+            <div className='flex-row' class="meal">
+                <div class="title">
+                   
+                    {/* {title} */}
+                </div>
+                <div class="ingredients">
+                    <h3>Ingredients:</h3>
+                    {/* {ingredients} */}
+                </div>
+                <div class="directions">
+                    {/* {directions} */}
+                </div>
             </div>
         </section>
     )
