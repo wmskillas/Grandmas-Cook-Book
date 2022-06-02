@@ -101,3 +101,8 @@ nav h2 {
     font-size: 10px;
   }
 }
+
+/* space-around navbar buttons */
+ul.d-flex.flex-row.align-items-baseline {
+  justify-content: space-around;
+}
