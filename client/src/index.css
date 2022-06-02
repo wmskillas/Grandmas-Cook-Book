@@ -23,11 +23,11 @@
   box-sizing: border-box;
 }
 
-/* html, */
+
 body {
   min-height: 100rem;
-  /* background-color: #8c6042;
-  font-family: 'Catamaran'; */
+  
+  font-family: 'Catamaran';
 }
 h1{
   font-size: 200px;
@@ -37,15 +37,27 @@ h1{
 }
 #addrecipe{
   padding:20px;
-  background:white;
-  border: solid black 2px;
+  background:rgb(221, 221, 212);
+  border: solid white 2px;
   border-radius: 5px;
   width: 500px;
   
 }
+/* .content{
+  margin-top: 10%;
+} */
 #pagename{
-  text-decoration: underline;
   text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+background-color:white;
+margin-top: -30px;
+border-bottom: solid 5px rgb(221, 221, 212);;
+/* position: absolute;
+left: 50%;
+
+transform: translate(-50%); */
+
 }
 .recipe{
   display:flex;
@@ -59,20 +71,41 @@ h1{
 }
 #addrecipe textarea{
   width: 100%;
+ 
+  margin-bottom: 20px;
 }
 #addrecipe input{
   width:100%;
+  margin-bottom: 20px;
 }
 #addrecipe button{
-  background-color: black;
+  background-color: rgba(49, 60, 0, 0.741);
   color:white;
-  border: solid black;
+ border: solid 2px rgba(49, 60, 0, 0.741);
   border-radius: 5px;
-  display: flex;
+  margin:10px;
+  cursor:pointer;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  
+}
+#addrecipe button:hover{
+  background-color: lightgrey;
+  color:black;
+}
+#addrecipe button:active {
+  background-color: rgb(221, 221, 212);
+  box-shadow: 0 5px #666;
+  transform: translateY(10px);
+}
+
+
+.mealchoicebuttons{
+  display:flex;
   justify-content: center;
-  align-items: center;
-  margin-left: 35%;
+ 
 }
 #directions{
   height: 200px;
 }
+
