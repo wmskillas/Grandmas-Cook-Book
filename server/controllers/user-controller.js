@@ -135,7 +135,7 @@ module.exports = {
       });
   },
 
-  async saveRecipe({ user, body }, res) {
+  async saveBreakfast({ user, body }, res) {
     console.log(user);
     try {
       const updatedUser = await User.findOneAndUpdate(
@@ -150,10 +150,68 @@ module.exports = {
     }
   },
 
-  async deleteRecipe({ user, params }, res) {
+  async deleteBreakfast({ user, params }, res) {
     const updatedUser = await User.findOneAndUpdate(
       { _id: user._id },
-      { $pull: { savedrecipes: { RecipeId: params.RecipeId } } },
+      { $pull: { savedrecipes: { BreakfastId: params.BreakfastId } } },
+      { new: true }
+    );
+    if (!updatedUser) {
+      return res
+        .status(404)
+        .json({ message: "Couldn't find user with this id!" });
+    }
+    return res.json(updatedUser);
+  },
+
+  async saveLunch({ user, body }, res) {
+    console.log(user);
+    try {
+      const updatedUser = await User.findOneAndUpdate(
+        { _id: user._id },
+        { $addToSet: { savedrecipes: body } },
+        { new: true, runValidators: true }
+      );
+      return res.json(updatedUser);
+    } catch (err) {
+      console.log(err);
+      return res.status(400).json(err);
+    }
+  },
+
+  async deleteLunch({ user, params }, res) {
+    const updatedUser = await User.findOneAndUpdate(
+      { _id: user._id },
+      { $pull: { savedrecipes: { LunchId: params.LunchId } } },
+      { new: true }
+    );
+    if (!updatedUser) {
+      return res
+        .status(404)
+        .json({ message: "Couldn't find user with this id!" });
+    }
+    return res.json(updatedUser);
+  },
+
+  async saveDinner({ user, body }, res) {
+    console.log(user);
+    try {
+      const updatedUser = await User.findOneAndUpdate(
+        { _id: user._id },
+        { $addToSet: { savedrecipes: body } },
+        { new: true, runValidators: true }
+      );
+      return res.json(updatedUser);
+    } catch (err) {
+      console.log(err);
+      return res.status(400).json(err);
+    }
+  },
+
+  async deleteDinner({ user, params }, res) {
+    const updatedUser = await User.findOneAndUpdate(
+      { _id: user._id },
+      { $pull: { savedrecipes: { DinnerId: params.DinnerId } } },
       { new: true }
     );
     if (!updatedUser) {
