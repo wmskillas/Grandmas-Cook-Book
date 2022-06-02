@@ -1,17 +1,17 @@
 import React from 'react';
 function Lunch(){
     return(
-        <section class="lunch">
+        <section className="lunch">
            
-            <div className='flex-row' class="meal">
-                <div class="title">
+            <div className='flex-row meal'>
+                <div className="title">
                     {/* {title} */}
                 </div>
-                <div class="ingredients">
+                <div className="ingredients">
                     <h3>Ingredients</h3>
                     {/* {ingredients} */}
                 </div>
-                <div class="directions">
+                <div className="directions">
                     {/* {directions} */}
                 </div>
             </div>

@@ -1,23 +1,25 @@
-import React from 'react';
-import PageContent from './PageContent';
-import AddRecipe from './AddRecipe';
-import Breakfast from './Breakfast';
-import Lunch from './Lunch';
-import Dinner from './Dinner';
-import { capitalizeFirstLetter } from '../utils/helpers';
+import React from "react";
+import PageContent from "./PageContent";
+import AddRecipe from "./AddRecipe";
+import Breakfast from "./Breakfast";
+import Lunch from "./Lunch";
+import Dinner from "./Dinner";
+import { capitalizeFirstLetter } from "../utils/helpers";
+import Contact from "./LoginForm";
 
 function Page({ currentPage }) {
-
   const renderPage = () => {
     switch (currentPage.name) {
-      case 'add recipe':
+      case "Add recipe":
         return <AddRecipe />;
-      case 'breakfast':
+      case "Breakfast":
         return <Breakfast />;
-      case 'lunch':
+      case "Lunch":
         return <Lunch />;
-      case 'dinner':
+      case "Dinner":
         return <Dinner />;
+      case "Login":
+        return <Contact />;
       default:
         return <AddRecipe />;
     }
@@ -25,7 +27,7 @@ function Page({ currentPage }) {
 
   return (
     <section>
-      <h2 id='pagename'>{capitalizeFirstLetter(currentPage.name)}</h2>
+      <h2 id="pagename">{capitalizeFirstLetter(currentPage.name)}</h2>
       <PageContent>{renderPage()}</PageContent>
     </section>
   );

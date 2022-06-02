@@ -18,6 +18,8 @@ nav ul {
 }
 
 nav li {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -28,7 +30,7 @@ nav li {
   background-color: rgba(0, 60, 0, 0.741);
   padding: 10px;
   margin: 5px;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 nav h2 {
@@ -70,7 +72,12 @@ nav h2 {
 }
 
 .navbg {
-  background-color: rgb(187, 201, 188);
+  background-color: #e1d9ca;
+}
+
+nav li:hover {
+  background-color: darkseagreen;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 900px) {
