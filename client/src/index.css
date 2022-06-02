@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Catamaran:wght@100&family=Orbitron&family=Oswald:wght@300&family=Roboto+Condensed:wght@300&display=swap');
-main {
+/* main {
   margin: 0 auto;
   max-width: 90%;
   padding: 50px 30px;
-}
+} */
 :root {
   --primary: #8c54ff;
   --secondary: #31343D;
@@ -23,11 +23,11 @@ main {
   box-sizing: border-box;
 }
 
-html,
+/* html, */
 body {
-  min-height: 100%;
-  background-color: rgb(247, 247, 247);
-  font-family: 'Catamaran';
+  min-height: 100rem;
+  /* background-color: #8c6042;
+  font-family: 'Catamaran'; */
 }
 h1{
   font-size: 200px;
@@ -38,9 +38,8 @@ h1{
 #addrecipe{
   padding:20px;
   background:white;
-  border: solid black 5px;
+  border: solid black 2px;
   border-radius: 5px;
-  position:absolute;
   width: 500px;
   
 }
@@ -49,8 +48,8 @@ h1{
   text-align: center;
 }
 .recipe{
-display:flex;
-margin-top:500px;
+  display:flex;
+  margin-top:20px;
   justify-content: center;
   align-items: center;
 }
@@ -75,5 +74,5 @@ margin-top:500px;
   margin-left: 35%;
 }
 #directions{
-  height: 500px;
+  height: 200px;
 }

@@ -18,34 +18,32 @@ function AddRecipe(){
   };
   
   return (
-    <section class="recipe">
-      <form id="addrecipe" onSubmit={handleSubmit}>
-        <div>
+    <section className="recipe">
+      <form className='bg-light' id="addrecipe" onSubmit={handleSubmit}>
+        <div className=''>
           <label htmlFor="name">Title:</label>
           <input
             type="text"
             name="title"
             defaultValue={title}
            />
-        </div>
-        <div>
+
           <label htmlFor="ingredients">Ingredients:</label>
           <textarea id="ingredients"
             type="textarea"
             name="ingredients"
-            rows="20"
+            rows="4"
             maxLength={500}
             defaultValue={ingredients}
             />
-        </div>
-        <div>
+
           <label htmlFor="directions">Directions:</label>
           <textarea id="directions"
             name="directions"
             type="textarea"
             maxLength={500}
-            rows={20}
-            cols={5}
+            rows="5"
+            cols="5"
             defaultValue={directions}
             />
         </div>
