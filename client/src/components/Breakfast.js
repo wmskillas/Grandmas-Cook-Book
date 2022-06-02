@@ -1,6 +1,7 @@
 import React from 'react';
 function Breakfast(){
     return(
+
         <section class="breakfast">
             
             <div className='flex-row' class="meal">
@@ -15,6 +16,7 @@ function Breakfast(){
                 <div class="directions">
                     {/* {directions} */}
                 </div>
+
             </div>
         </section>
     )
