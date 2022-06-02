@@ -88,17 +88,22 @@ function Nav(props) {
   }, [currentPage]);
 
   return (
+      <section className="fullheader">
     <nav>
-      <div className="">
+      <div className="header">    
+        <img className="icon" alt="grandmas-cook-book.img" src={Icon}></img>
+      <div className="HeaderWords">
         <h2 className="h2el">
           Welcome to the one and only cook book you will ever need!{" "}
         </h2>
         <h2 className="h2el2">Like Grandma always says "It takes a village"</h2>
       </div>
-      <div>
-        <img className="icon" alt="grandmas-cook-book.img" src={Icon}></img>
-      </div>
-      <ul className="d-flex flex-row align-items-baseline">
+    </div>
+    <br></br>
+
+    <div className="pagelist">
+        <br></br>
+      <ul className="pagebtn">
         {pages.map((Page) => (
           <li
             className={`mx-5 d-flex  ${
@@ -112,7 +117,9 @@ function Nav(props) {
           </li>
         ))}
       </ul>
+    </div>  
     </nav>
+    </section>
   );
 }
 export default Nav;

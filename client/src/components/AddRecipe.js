@@ -18,9 +18,16 @@ function AddRecipe(){
   };
   
   return (
-    <section className="recipe">
-      <form className='bg-light' id="addrecipe" onSubmit={handleSubmit}>
-        <div className=''>
+   
+       
+    <section class="recipe">
+      <form className='bg-light'id="addrecipe" onSubmit={handleSubmit}>
+        <div>
+            <div class="mealchoicebuttons">
+                <button>Breakfast</button>
+                <button>Lunch</button>
+                <button>Dinner</button>
+            </div>
           <label htmlFor="name">Title:</label>
           <input
             type="text"
@@ -47,7 +54,7 @@ function AddRecipe(){
             defaultValue={directions}
             />
         </div>
-        <button type="submit">Submit</button>
+        <button className= "submit" type="submit">Submit</button>
       </form>
     </section>
   );

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Page from "./components/Page";
 import Navbar from "./components/Navbar";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import "../src/style.css";
 import Dinner from "./components/Dinner";
 import Lunch from "./components/Lunch";
@@ -25,8 +25,8 @@ function App() {
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
-    <body className="bodybg">
-      <div className="navbg">
+    <body className='bodybg'>
+      <div className='navbg'>
         <Navbar
           pages={pages}
           setCurrentPage={setCurrentPage}
