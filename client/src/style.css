@@ -21,7 +21,6 @@ nav {
 }
 nav li {
  display:flex;
-
   flex-direction: column;
   font-size: 18px;
   list-style: none;
@@ -29,10 +28,10 @@ nav li {
   color: white;
   background-color: rgba(49, 60, 0, 0.741);
   padding: 10px;
-  
   border: solid 2px rgba(49, 60, 0, 0.741);
   border-radius: 5px;
   cursor: pointer;
+
 }
 
   nav li:active {
@@ -85,9 +84,14 @@ nav li {
   transform: translateY(10px);
 }
 .navbg {
-  background-color: rgb(221, 221, 212);
+  background-color: #e1d9ca;
+/*   background-color: rgb(221, 221, 212); */
   border-bottom:solid white 5px;
- 
+}
+
+nav li:hover {
+  background-color: darkseagreen;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 900px) {

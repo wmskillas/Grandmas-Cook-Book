@@ -78,7 +78,7 @@
 
 import React, { useEffect } from "react";
 import { capitalizeFirstLetter } from "../utils/helpers";
-import Icon from "../assets/images/GCBLS.png";
+import Icon from "../assets/images/GCBgreen.png";
 
 function Nav(props) {
   const { pages = [], setCurrentPage, currentPage } = props;
