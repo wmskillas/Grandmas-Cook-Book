@@ -1,25 +1,25 @@
 const router = require("express").Router();
 
 const {
-  getRecipes,
-  createRecipe,
-  getSingleRecipe,
-  updateRecipe,
-  deleteRecipe,
+  getBreakfasts,
+  createBreakfast,
+  getSingleBreakfast,
+  updateBreakfast,
+  deleteBreakfast,
   addReaction,
   removeReaction,
 } = require("../../controllers/breakfast-controller");
 
-router.route("/").get(getRecipes).post(createRecipe);
+router.route("/").get(getBreakfasts).post(createBreakfast);
 
 router
-  .route("/:recipeId")
-  .get(getSingleRecipe)
-  .put(updateRecipe)
-  .delete(deleteRecipe);
+  .route("/:breakfastId")
+  .get(getSingleBreakfast)
+  .put(updateBreakfast)
+  .delete(deleteBreakfast);
 
 router
-  .route("/:recipeId/reactions/:reactionId")
+  .route("/:breakfastId/reactions/:reactionId")
   .post(addReaction)
   .delete(removeReaction);
 
