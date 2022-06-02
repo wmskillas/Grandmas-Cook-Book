@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import Page from "./components/Page";
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../src/style.css"
+import "../src/style.css";
 
 function App() {
   const [pages] = useState([
     {
-      name: "Add Recipe"
+      name: "Add Recipe",
     },
     { name: "Breakfast" },
     { name: "Lunch" },
     {
-      name: "Dinner"
+      name: "Dinner",
     },
     {
-      name: 'Login'
-    }
+      name: "Login",
+    },
   ]);
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
