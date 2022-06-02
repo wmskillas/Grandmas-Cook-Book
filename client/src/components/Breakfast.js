@@ -1,7 +1,7 @@
 import React from 'react';
 function Breakfast(){
     return(
-        <section class="breakfast">
+        <section className='breakfast'>
             <h1>Breakfast</h1>
             <div className='flex-row'>
                 {/* {Breakfast} */}

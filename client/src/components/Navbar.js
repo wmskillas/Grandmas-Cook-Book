@@ -76,44 +76,43 @@
 
 // export default AppNavbar;
 
-
-import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../utils/helpers';
-import Icon from "../assets/images/GCBLS.png" 
+import React, { useEffect } from "react";
+import { capitalizeFirstLetter } from "../utils/helpers";
+import Icon from "../assets/images/GCBLS.png";
 
 function Nav(props) {
-  const {
-    pages = [],
-    setCurrentPage,
-    currentPage,
-  } = props;
+  const { pages = [], setCurrentPage, currentPage } = props;
 
   useEffect(() => {
     document.title = capitalizeFirstLetter(currentPage.name);
   }, [currentPage]);
 
-  return (    
-      <nav>
-        <div>
-          <img className='icon' alt='grandmas-cook-book.img' src={Icon}></img>
-        </div>
-        <ul className="flex-row">
-          {pages.map((Page) => (
-            <li
-              className={`mx-5 ${
-                currentPage.name === Page.name && 'navActive'
-                }`}
-              key={Page.name}
-            >
-              <span
-                onClick={() => setCurrentPage(Page)}
-              >
-                {capitalizeFirstLetter(Page.name)}
-              </span>
-            </li>
-          ))}
-        </ul>
-      </nav>
+  return (
+    <nav>
+      <div className="">
+        <h2 className="h2el">
+          Welcome to the one and only cook book you will ever need!{" "}
+        </h2>
+        <h2 className="h2el2">Like Grandma always says "It takes a village"</h2>
+      </div>
+      <div>
+        <img className="icon" alt="grandmas-cook-book.img" src={Icon}></img>
+      </div>
+      <ul className="d-flex flex-row align-items-baseline">
+        {pages.map((Page) => (
+          <li
+            className={`mx-5 d-flex  ${
+              currentPage.name === Page.name && "navActive"
+            }`}
+            key={Page.name}
+          >
+            <span onClick={() => setCurrentPage(Page)}>
+              {capitalizeFirstLetter(Page.name)}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 }
 export default Nav;
