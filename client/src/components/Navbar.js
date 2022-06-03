@@ -113,7 +113,14 @@ function Nav(props) {
                 }`}
                 key={Page.name}
               >
+<<<<<<< HEAD
                 <button onClick={() => setCurrentPage(Page)}>
+=======
+                <button
+                  className='mx-5 d-flex'
+                  onClick={() => setCurrentPage(Page)}
+                >
+>>>>>>> c0542ad1cff7a8764ff3f24ebc2819386fa15019
                   {capitalizeFirstLetter(Page.name)}
                 </button>
               </li>
