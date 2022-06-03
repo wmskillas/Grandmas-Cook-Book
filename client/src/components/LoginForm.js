@@ -54,7 +54,7 @@ function Contact() {
         </div>
         <div>
           <label htmlFor="message">Password:</label>
-          <textarea
+          <input
             name="password"
            type='password'
             defaultValue={password}
