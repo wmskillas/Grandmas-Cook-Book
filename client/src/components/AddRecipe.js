@@ -1,10 +1,6 @@
-import React, { useState, Component} from 'react';
+import React, { useState} from 'react';
+import ImageUploader from 'react-images-upload';
 
-// class App extends Component{
-//   fileSelectedHandler = event =>{
-//     console.log(event);
-//   }
-//   }
 
 function AddRecipe(){
     const [formState] = useState({
@@ -12,19 +8,48 @@ function AddRecipe(){
     ingredients: '',
     directions: '',
   });
-  const [errorMessage] = useState('');
+  const [errorMessage,setErrorMessage] = useState('');
   const { title, ingredients, directions} = formState;
-    
+  
+  const [url,setImageURL]=useState(undefined);
+  const onUrlChange=e=>{
+    setImageURL(e.target.value);
+  }
+const onImage=async(failedImages, successImages)=>{
+  if(!url){
+    console.log('missing URL');
+    setErrorMessage('missing a URL to upload to');
+    return
+  }
+  try{
+console.log('successImages', successImages)
+  }catch(err){
+console.log('error in upload');
+  }
+}
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!errorMessage) {
       console.log('Submit Form', formState);
     }
   };
-  
-  return (
-   
-       
+ const UploadComponent= props =>(
+  <form>
+  {/* <input id='urlInput' type='text' onChange={props.onUrlChange} value={props.url}></input> */}
+  <ImageUploader
+  className='imageuploader'
+  key='image-uploader'
+  withIcon={true}
+  single={true}
+  withPreview={true}
+  label='Maximum size file:5MB'
+  buttonText="Choose an image"
+  onChange={props.onImage}
+  imgExtension={['.jpg', '.png', '.jpeg']}
+  maxFileSize={5242880}></ImageUploader>
+  </form>
+ );
+return (  
     <section class="recipe">
       <form className='bg-light'id="addrecipe" onSubmit={handleSubmit}>
         <div>
@@ -38,7 +63,7 @@ function AddRecipe(){
             type="text"
             name="title"
             defaultValue={title}
-           />
+           ></input>
 
           <label htmlFor="ingredients">Ingredients:</label>
           <textarea id="ingredients"
@@ -59,9 +84,9 @@ function AddRecipe(){
             defaultValue={directions}
             />
         </div>
-        {/* <div className='App'>
-        <input type='file'  onChange={this.fileSelectedHandler}/>
-        </div> */}
+        <UploadComponent className='imageuploader' onUrlChange={onUrlChange} onImage={onImage}
+        url={url}
+        ></UploadComponent>
         <button className= "submit" type="submit">Submit</button>
       </form>
     </section>
