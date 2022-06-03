@@ -1,11 +1,16 @@
 const express = require("express");
+const db = require("./config/connection");
+const routes = require("./routes");
+
 const PORT = process.env.PORT || 3001;
-
 const app = express();
-app.listen(PORT, () => {
-  console.log("Testing 123, is this on?");
-});
 
-app.get("/express_backend", (req, res) => {
-  res.send({ express: "YOUR EXPRESS BACKEND IS CONNECTED TO REACT" });
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(routes);
+
+db.once("open", () => {
+  app.listen(PORT, () => {
+    console.log(`API server running on port ${PORT}!`);
+  });
 });

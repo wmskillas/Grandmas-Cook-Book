@@ -9,4 +9,3 @@ mongoose.connect(
 );
 
 module.exports = mongoose.connection;
-// Using the local host for dev
