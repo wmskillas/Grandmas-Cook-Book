@@ -50,10 +50,10 @@ h1 {
   background-color: white;
   margin-top: -30px;
   border-bottom: solid 5px rgb(221, 221, 212);
-  /* position: absolute;
+  position: absolute;
 left: 50%;
 
-transform: translate(-50%); */
+transform: translate(-50%); 
 }
 .recipe {
   display: flex;
@@ -67,7 +67,6 @@ transform: translate(-50%); */
 }
 #addrecipe textarea {
   width: 100%;
-
   margin-bottom: 20px;
 }
 #addrecipe input {
@@ -80,6 +79,12 @@ transform: translate(-50%); */
   border: solid 2px rgba(49, 60, 0, 0.741);
   border-radius: 5px;
   margin: 10px;
+  /* transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; */
+}
+#addrecipe button:hover {
+  background-color: lightgrey;
+  color: black;
 }
 
 #addrecipe button:active {
@@ -94,7 +99,15 @@ transform: translate(-50%); */
   box-shadow: 0 5px #666;
   transform: translateY(10px);
 }
-
+#contact-form{
+  background-color:rgb(221, 221, 212);
+  border: solid white 5px;
+  border-radius: 5px;
+  position:absolute;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+}
 .mealchoicebuttons {
   display: flex;
   justify-content: center;
