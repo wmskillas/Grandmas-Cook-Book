@@ -88,37 +88,42 @@ function Nav(props) {
   }, [currentPage]);
 
   return (
-      <section className="fullheader">
-    <nav>
-      <div className="header">    
-        <img className="icon" alt="grandmas-cook-book.img" src={Icon}></img>
-      <div className="HeaderWords">
-        <h2 className="h2el">
-          Welcome to the one and only cook book you will ever need!{" "}
-        </h2>
-        <h2 className="h2el2">Like Grandma always says "It takes a village"</h2>
-      </div>
-    </div>
-    <br></br>
-
-    <div className="pagelist">
+    <section className='fullheader'>
+      <nav>
+        <div className='header'>
+          <img className='icon' alt='grandmas-cook-book.img' src={Icon}></img>
+          <div className='HeaderWords'>
+            <h2 className='h2el'>
+              Welcome to the one and only cook book you will ever need!{" "}
+            </h2>
+            <h2 className='h2el2'>
+              Like Grandma always says "It takes a village"
+            </h2>
+          </div>
+        </div>
         <br></br>
-      <ul className="pagebtn">
-        {pages.map((Page) => (
-          <li
-            className={`mx-5 d-flex  ${
-              currentPage.name === Page.name && "navActive"
-            }`}
-            key={Page.name}
-          >
-            <span onClick={() => setCurrentPage(Page)}>
-              {capitalizeFirstLetter(Page.name)}
-            </span>
-          </li>
-        ))}
-      </ul>
-    </div>  
-    </nav>
+
+        <div className='pagelist'>
+          <br></br>
+          <ul className='pagebtn'>
+            {pages.map((Page) => (
+              <li
+                className={`mx-5 d-flex  ${
+                  currentPage.name === Page.name && "navActive"
+                }`}
+                key={Page.name}
+              >
+                <button
+                  className='mx-5 d-flex'
+                  onClick={() => setCurrentPage(Page)}
+                >
+                  {capitalizeFirstLetter(Page.name)}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
     </section>
   );
 }

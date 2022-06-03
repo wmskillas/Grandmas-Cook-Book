@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Catamaran:wght@100&family=Orbitron&family=Oswald:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Catamaran:wght@100&family=Orbitron&family=Oswald:wght@300&family=Roboto+Condensed:wght@300&display=swap");
 /* main {
   margin: 0 auto;
   max-width: 90%;
@@ -6,92 +6,87 @@
 } */
 :root {
   --primary: #8c54ff;
-  --secondary: #31343D;
+  --secondary: #31343d;
   --tertiary: #b12704;
   --light: #fafafa;
-  --dark: #799FBA;
-  --darker: #1F3B60;
-  --alpha: rgba(255,255,255,.7);
+  --dark: #799fba;
+  --darker: #1f3b60;
+  --alpha: rgba(255, 255, 255, 0.7);
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
- 
 }
 
 * {
   box-sizing: border-box;
 }
 
-
 body {
   min-height: 100rem;
-  
-  font-family: 'Catamaran';
+
+  font-family: "Catamaran";
 }
-h1{
+h1 {
   font-size: 200px;
 }
-.pages{
+.pages {
   text-decoration: underline;
 }
-#addrecipe{
-  padding:20px;
-  background:rgb(221, 221, 212);
+#addrecipe {
+  padding: 20px;
+  background: rgb(221, 221, 212);
   border: solid white 2px;
   border-radius: 5px;
   width: 500px;
-  
 }
 /* .content{
   margin-top: 10%;
 } */
-#pagename{
+#pagename {
   text-align: center;
   font-size: 30px;
   font-weight: 900;
-background-color:white;
-margin-top: -30px;
-border-bottom: solid 5px rgb(221, 221, 212);;
-/* position: absolute;
+  background-color: white;
+  margin-top: -30px;
+  border-bottom: solid 5px rgb(221, 221, 212);
+  /* position: absolute;
 left: 50%;
 
 transform: translate(-50%); */
-
 }
-.recipe{
-  display:flex;
-  margin-top:20px;
+.recipe {
+  display: flex;
+  margin-top: 20px;
   justify-content: center;
   align-items: center;
 }
-#addrecipe label{
+#addrecipe label {
   text-align: left;
   padding-right: 10px;
 }
-#addrecipe textarea{
+#addrecipe textarea {
   width: 100%;
- 
+
   margin-bottom: 20px;
 }
-#addrecipe input{
-  width:100%;
+#addrecipe input {
+  width: 100%;
   margin-bottom: 20px;
 }
-#addrecipe button{
+#addrecipe button {
   background-color: rgba(49, 60, 0, 0.741);
-  color:white;
- border: solid 2px rgba(49, 60, 0, 0.741);
+  color: white;
+  border: solid 2px rgba(49, 60, 0, 0.741);
   border-radius: 5px;
-  margin:10px;
-  cursor:pointer;
+  margin: 10px;
+
   transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s;
-  
 }
-#addrecipe button:hover{
+#addrecipe button:hover {
   background-color: lightgrey;
-  color:black;
+  color: black;
 }
 #addrecipe button:active {
   background-color: rgb(221, 221, 212);
@@ -99,13 +94,52 @@ transform: translate(-50%); */
   transform: translateY(10px);
 }
 
-
-.mealchoicebuttons{
-  display:flex;
+.mealchoicebuttons {
+  display: flex;
   justify-content: center;
- 
 }
-#directions{
+#directions {
   height: 200px;
 }
 
+div.pagelist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+li.mx-5.d-flex.false {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+li.mx-5.d-flex.navActive {
+  display: none;
+}
+
+div.HeaderWords {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2.h2el {
+  display: flex;
+}
+h2.h2el2 {
+  display: flex;
+}
+ul li button {
+  background-color: rgba(49, 60, 0, 0.741);
+  color: white;
+  border: solid 2px rgba(49, 60, 0, 0.741);
+  border-radius: 5px;
+  margin: 10px;
+
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+}
+
+ul li button:focus {
+  background-color: white;
+  color: rgba(49, 60, 0, 0.741);
+}
