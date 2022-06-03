@@ -80,7 +80,9 @@ h1 {
   color: white;
   border: solid 2px rgba(49, 60, 0, 0.741);
   border-radius: 5px;
-  margin: 10px;
+  display:flex;
+  margin-top: 10px;
+  
 }
 #addrecipe button {
   background-color: rgba(49, 60, 0, 0.741);
