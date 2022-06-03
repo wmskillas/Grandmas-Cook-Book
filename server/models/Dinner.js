@@ -12,7 +12,7 @@ const dinnerSchema = new Schema({
       required: true,
     },
 
-    dinnerid: {
+    dinnerId: {
       type: String,
       required: true,
     },
