@@ -1,6 +1,11 @@
-import React, { useState } from 'react';
- 
-  
+import React, { useState, Component} from 'react';
+
+// class App extends Component{
+//   fileSelectedHandler = event =>{
+//     console.log(event);
+//   }
+//   }
+
 function AddRecipe(){
     const [formState] = useState({
     title: '',
@@ -54,10 +59,12 @@ function AddRecipe(){
             defaultValue={directions}
             />
         </div>
+        {/* <div className='App'>
+        <input type='file'  onChange={this.fileSelectedHandler}/>
+        </div> */}
         <button className= "submit" type="submit">Submit</button>
       </form>
     </section>
   );
   };
-
 export default AddRecipe;

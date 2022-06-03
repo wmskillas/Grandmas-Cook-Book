@@ -67,6 +67,7 @@ function Contact() {
           </div>
         )}
         <button type="submit">Login</button>
+        <button type="signup">Sign Up</button>
       </form>
     </section>
   );

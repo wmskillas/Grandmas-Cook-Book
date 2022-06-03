@@ -51,12 +51,6 @@ h1 {
   font-weight: 900;
   background-color: #e1d9ca;
   margin-top: -30px;
-
-  border-bottom: solid 5px #e1d9ca;
-  /* position: absolute;
-left: 50%;
-
-transform:
   border-bottom: solid 5px rgb(221, 221, 212);
 /*  */
 }
@@ -87,9 +81,14 @@ transform:
 #contact-form button {
   background-color: rgba(49, 60, 0, 0.741);
   color: white;
-  border: solid 2px rgba(49, 60, 0, 0.741);
+  border: solid 2px var(--green);
   border-radius: 5px;
-  margin: 10px;
+  margin: 5px;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  display:flex;
+  margin-top: 10px;
+  
 }
 #addrecipe button {
   background-color: var(--green);
@@ -97,8 +96,18 @@ transform:
   border: solid 2px var(--green);
   border-radius: 5px;
   margin: 10px;
-  /* transition-duration: 0.4s;
-  -webkit-transition-duration: 0.4s; */
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; 
+}
+#contact-form button:hover{
+  background-color: lightgrey;
+  color: black;
+}
+#contact-form:active{
+  background-color: white;
+  color: var(--green);
+  box-shadow: 0 5px #666;
+  transform: translateY(10px);
 }
 #addrecipe button:hover {
   background-color: lightgrey;
