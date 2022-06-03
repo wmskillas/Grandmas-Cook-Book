@@ -81,10 +81,7 @@ transform: translate(-50%); */
   border-radius: 5px;
   margin: 10px;
 }
-#addrecipe button:hover {
-  background-color: white;
-  color: rgba(49, 60, 0, 0.741);
-}
+
 #addrecipe button:active {
   background-color: white;
   color: rgba(49, 60, 0, 0.741);
@@ -152,6 +149,7 @@ ul li button {
   border-radius: 5px;
   margin: 10px;
 }
+
 ul li button:active {
   background-color: white;
   color: rgba(49, 60, 0, 0.741);
