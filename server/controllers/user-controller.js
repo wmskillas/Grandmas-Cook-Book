@@ -31,16 +31,25 @@ module.exports = {
 
     res.json(foundUser);
   },
-
-  async createUser({ body }, res) {
-    const user = await User.create(body);
-
-    if (!user) {
-      return res.status(400).json({ message: "Something is wrong!" });
-    }
-    const token = signToken(user);
-    res.json({ token, user });
+  async createUser(req, res) {
+    User.create(req.body)
+      .then((dbUserData) => {
+        res.json(dbUserData);
+      })
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+      });
   },
+  // async createUser({ body }, res) {
+  //   const user = await User.create(body);
+
+  //   if (!user) {
+  //     return res.status(400).json({ message: "Something is wrong!" });
+  //   }
+  //   const token = signToken(user);
+  //   res.json({ token, user });
+  // },
 
   async login({ body }, res) {
     const user = await User.findOne({
