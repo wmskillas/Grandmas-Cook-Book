@@ -108,19 +108,13 @@ function Nav(props) {
           <ul className='pagebtn'>
             {pages.map((Page) => (
               <li
-                className={`mx-5 d-flex  ${
-                  currentPage.name === Page.name && "navActive"
-                }`}
+                className={`  ${currentPage.name === Page.name && "navActive"}`}
                 key={Page.name}
               >
-<<<<<<< HEAD
-                <button onClick={() => setCurrentPage(Page)}>
-=======
                 <button
                   className='mx-5 d-flex'
                   onClick={() => setCurrentPage(Page)}
                 >
->>>>>>> c0542ad1cff7a8764ff3f24ebc2819386fa15019
                   {capitalizeFirstLetter(Page.name)}
                 </button>
               </li>
