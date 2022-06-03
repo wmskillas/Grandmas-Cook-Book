@@ -40,7 +40,7 @@ function Contact() {
   };
 
   return (
-    <section>
+    <section className='d-flex justify-content-center'>
       <form id="contact-form" onSubmit={handleSubmit}>
         
         <div>

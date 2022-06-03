@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import Page from "./components/Page";
 import Navbar from "./components/Navbar";
-
 import "../src/style.css";
-import Dinner from "./components/Dinner";
-import Lunch from "./components/Lunch";
-import Breakfast from "./components/Breakfast";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [pages] = useState([
