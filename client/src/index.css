@@ -53,10 +53,8 @@ h1 {
   margin-top: -30px;
 
   border-bottom: solid 5px #e1d9ca;
-  /* position: absolute;
+  position: absolute;
 left: 50%;
-
-transform:
   border-bottom: solid 5px rgb(221, 221, 212);
 
 }
@@ -99,8 +97,8 @@ transform:
   border: solid 2px var(--green);
   border-radius: 5px;
   margin: 10px;
-  /* transition-duration: 0.4s;
-  -webkit-transition-duration: 0.4s; */
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; 
 }
 #addrecipe button:hover {
   background-color: lightgrey;
