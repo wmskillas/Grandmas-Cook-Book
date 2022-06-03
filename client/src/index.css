@@ -16,6 +16,7 @@
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
+  --green: #30602f;
 }
 
 * {
@@ -45,11 +46,19 @@ h1 {
 } */
 #pagename {
   text-align: center;
+  color: var(--green);
   font-size: 30px;
   font-weight: 900;
-  background-color: white;
+  background-color: #e1d9ca;
   margin-top: -30px;
+
+  border-bottom: solid 5px #e1d9ca;
+  /* position: absolute;
+left: 50%;
+
+transform:
   border-bottom: solid 5px rgb(221, 221, 212);
+
 }
 .recipe {
   display: flex;
@@ -83,9 +92,9 @@ h1 {
   margin: 10px;
 }
 #addrecipe button {
-  background-color: rgba(49, 60, 0, 0.741);
+  background-color: var(--green);
   color: white;
-  border: solid 2px rgba(49, 60, 0, 0.741);
+  border: solid 2px var(--green);
   border-radius: 5px;
   margin: 10px;
   /* transition-duration: 0.4s;
@@ -98,13 +107,13 @@ h1 {
 
 #addrecipe button:active {
   background-color: white;
-  color: rgba(49, 60, 0, 0.741);
+  color: var(--green);
   box-shadow: 0 5px #666;
   transform: translateY(10px);
 }
 #addrecipe button:focus {
   background-color: white;
-  color: rgba(49, 60, 0, 0.741);
+  color: var(--green);
   box-shadow: 0 5px #666;
   transform: translateY(10px);
 }
@@ -165,28 +174,30 @@ div.HeaderWords {
 h2.h2el {
   display: flex;
   text-align: center;
+  color: #30602f;
 }
 h2.h2el2 {
   display: flex;
   text-align: center;
+  color: #30602f;
 }
 ul li button {
-  background-color: rgba(49, 60, 0, 0.741);
+  background-color: var(--green);
   color: white;
-  border: solid 2px rgba(49, 60, 0, 0.741);
+  border: solid 2px var(--green);
   border-radius: 5px;
   margin: 10px;
 }
 
 ul li button:active {
   background-color: white;
-  color: rgba(49, 60, 0, 0.741);
+  color: var(--green);
   box-shadow: 0 5px #666;
   transform: translateY(10px);
 }
 ul li button:focus {
   background-color: white;
-  color: rgba(49, 60, 0, 0.741);
+  color: var(--green);
   box-shadow: 0 5px #666;
   transform: translateY(10px);
 }
@@ -196,4 +207,9 @@ ul li button:focus {
 
 section.fullheader div.pagelist {
   display: flex;
+}
+
+form {
+  background-color: #e1d9ca;
+  color: #30602f;
 }
