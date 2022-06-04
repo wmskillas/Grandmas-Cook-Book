@@ -36,8 +36,9 @@ h1 {
 }
 #addrecipe {
   padding: 20px;
-
-  border: solid white 2px;
+  border-color: #e1d9ca;
+  background-color: #e1d9ca;
+  box-shadow: 0 5px 10px 0 #666;
   border-radius: 5px;
   width: 500px;
 }
@@ -102,10 +103,16 @@ h1 {
   background-color: rgb(255, 255, 255);
   color: var(--green);
 }
-#contact-form:active {
+#contact-form button:active {
   background-color: white;
   color: var(--green);
-  box-shadow: 0 5px #666;
+  box-shadow: 0 5px 10px 0 #666;
+  transform: translateY(1px);
+}
+#contact-form button:focus {
+  background-color: white;
+  color: var(--green);
+  box-shadow: 0 5px 10px 0 #666;
   transform: translateY(1px);
 }
 #addrecipe button:hover {
@@ -132,8 +139,8 @@ h1 {
 
 #contact-form {
   padding: 20px;
-  background-color: #fafafa;
-  border: solid white 2px;
+  background-color: #e1d9ca;
+  border: solid #e1d9ca 2px;
   border-radius: 5px;
   width: 300px;
   justify-content: center;
@@ -141,6 +148,7 @@ h1 {
   margin: auto;
   text-align: left;
   margin-top: 20px;
+  box-shadow: 0 5px 10px 0 #666;
 }
 .mealchoicebuttons {
   display: flex;
@@ -264,9 +272,5 @@ div.fileUploader.imageuploader button:focus {
 section.recipe div form div.fileUploader.imageuploader div.fileContainer {
   background-color: #e1d9ca;
   border-radius: 5px;
+  box-shadow: 0 5px 10px 0 #666;
 }
-
-/* div.content div section.recipe div form.bg-light#adderecipe {
-  background-color: #e1d9ca;
-  border-radius: 5px;
-} */
