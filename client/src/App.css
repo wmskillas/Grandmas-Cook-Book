@@ -18,24 +18,42 @@ nav {
 
 .pagebtn {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
 nav li {
-  display: flex;
-  flex-direction: column;
   font-size: 1.125rem;
   list-style: none;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon {
   width: 11rem;
-
-  justify-content: left;
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 .header {
   display: flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
   justify-content: center;
   align-items: center;
 }
@@ -43,14 +61,19 @@ nav li {
 .h2el2 {
   font-style: italic;
   font-size: 1.25rem;
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .bodybg {
   /* background-color: #8c6042; */
   background-image: url("./assets/images/H-calum-lewis-vA1L1jRTM70-unsplash.jpg");
   background-size: 100%;
-  background-attachment: fixed;
-  background-color: none;
 }
 
 /* #pagename button:active {
@@ -61,5 +84,10 @@ nav li {
 .navbg {
   background-color: #e1d9ca;
   display: flex;
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
