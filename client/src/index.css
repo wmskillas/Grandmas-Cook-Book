@@ -79,7 +79,7 @@ h1 {
   margin-bottom: 20px;
 }
 #contact-form button {
-  background-color: var(--green);
+  background-color: rgba(49, 60, 0, 0.741);
   color: white;
   border: solid 2px var(--green);
   border-radius: 5px;
@@ -99,8 +99,8 @@ h1 {
   -webkit-transition-duration: 0.4s;
 }
 #contact-form button:hover {
-  background-color: rgb(255, 255, 255);
-  color: var(--green);
+  background-color: lightgrey;
+  color: black;
 }
 #contact-form:active {
   background-color: white;
@@ -109,27 +109,26 @@ h1 {
   transform: translateY(10px);
 }
 #addrecipe button:hover {
-  background-color: white;
-  color: var(--green);
+  background-color: lightgrey;
+  color: black;
 }
 
 #addrecipe button:active {
   background-color: white;
   color: var(--green);
-  box-shadow: 0 5px 10px 0 #666;
+  box-shadow: 0 5px #666;
   transform: translateY(10px);
 }
 #addrecipe button:focus {
   background-color: white;
   color: var(--green);
-  box-shadow: 0 5px 10px 0 #666;
+  box-shadow: 0 5px #666;
   transform: translateY(10px);
 }
 #contact-form input {
   display: flex;
   width: 250px;
 }
-
 #contact-form {
   padding: 20px;
   background-color: #fafafa;
@@ -140,7 +139,7 @@ h1 {
   align-items: center;
   margin: auto;
   text-align: left;
-  margin-top: 20px;
+  margin-top:20px;
 }
 .mealchoicebuttons {
   display: flex;
@@ -199,20 +198,18 @@ ul li button {
   border: solid 2px var(--green);
   border-radius: 5px;
   margin: 10px;
-  transition-duration: 0.4s;
-  -webkit-transition-duration: 0.4s;
 }
 
 ul li button:active {
   background-color: white;
   color: var(--green);
-  box-shadow: 0 5px 10px 0 #666;
+  box-shadow: 0 5px #666;
   transform: translateY(10px);
 }
 ul li button:focus {
   background-color: white;
   color: var(--green);
-  box-shadow: 0 5px 10px 0 #666;
+  box-shadow: 0 5px #666;
   transform: translateY(10px);
 }
 .d-flex {
