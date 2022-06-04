@@ -19,6 +19,7 @@ nav {
   margin: 30px;
   display:flex;
 }
+
 nav li {
  display:flex;
   flex-direction: column;
@@ -98,6 +99,7 @@ nav li:hover {
   background-color: darkseagreen;
   cursor: pointer;
 }
+
 
 @media only screen and (max-width: 900px) {
   .h2el {

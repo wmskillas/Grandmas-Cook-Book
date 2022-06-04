@@ -24,9 +24,12 @@
 }
 
 body {
-  min-height: 100rem;
+
 
   font-family: "Catamaran";
+}
+.loginpage{
+  min-height: 50rem;
 }
 h1 {
   font-size: 200px;
