@@ -114,6 +114,8 @@ h1 {
 #contact-form button:hover {
   background-color: rgb(255, 255, 255);
   color: var(--green);
+  box-shadow: 0 0.313rem 0.625rem 0 #666;
+  transform: translateY(0.063rem);
 }
 #contact-form button:active {
   background-color: white;
@@ -130,6 +132,8 @@ h1 {
 #addrecipe button:hover {
   background-color: white;
   color: var(--green);
+  box-shadow: 0 0.313rem 0.625rem 0 #666;
+  transform: translateY(0.063rem);
 }
 
 #addrecipe button:active {
@@ -234,6 +238,8 @@ ul li button:hover {
   color: var(--green);
   border: solid 0.125rem var(--green);
   border-radius: 0.313rem;
+  box-shadow: 0 0.313rem 0.625rem 0 #666;
+  transform: translateY(0.063rem);
 }
 
 ul li button:active {
@@ -277,6 +283,8 @@ div.fileUploader.imageuploader button:hover {
   margin: 0.625rem;
   transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s;
+  box-shadow: 0 0.313rem 0.625rem 0 #666;
+  transform: translateY(0.063rem);
 }
 
 div.fileUploader.imageuploader button:active {
