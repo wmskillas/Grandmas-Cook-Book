@@ -24,7 +24,7 @@
 }
 
 body {
-  min-height: 100rem;
+  min-height: 58.09rem;
 
   font-family: "Catamaran";
 }
@@ -66,6 +66,7 @@ h1 {
   flex-wrap: wrap;
   /*  */
 }
+
 .recipe {
   display: flex;
   margin-top: 1.25rem;
@@ -218,6 +219,7 @@ h2.h2el2 {
   text-align: center;
   color: #30602f;
 }
+
 ul li button {
   background-color: var(--green);
   color: white;
