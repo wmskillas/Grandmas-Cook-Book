@@ -50,10 +50,13 @@ console.log('error in upload');
   </form>
  );
 return (  
-    <section class="recipe">
+    <section className="recipe">
+      <div><UploadComponent className='imageuploader' onUrlChange={onUrlChange} onImage={onImage}
+        url={url}
+        ></UploadComponent>
       <form className='bg-light'id="addrecipe" onSubmit={handleSubmit}>
         <div>
-            <div class="mealchoicebuttons">
+            <div className="mealchoicebuttons">
                 <button>Breakfast</button>
                 <button>Lunch</button>
                 <button>Dinner</button>
@@ -84,11 +87,12 @@ return (
             defaultValue={directions}
             />
         </div>
-        <UploadComponent className='imageuploader' onUrlChange={onUrlChange} onImage={onImage}
-        url={url}
-        ></UploadComponent>
+       
+        
         <button className= "submit" type="submit">Submit</button>
-      </form>
+         </form>
+      </div>
+      
     </section>
   );
   };
