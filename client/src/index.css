@@ -206,9 +206,13 @@ ul li button {
   color: white;
   border: solid 2px var(--green);
   border-radius: 5px;
-
+  width: 120px;
+  height: 35px;
   transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 ul li button:hover {
   background-color: white;
@@ -273,4 +277,13 @@ section.recipe div form div.fileUploader.imageuploader div.fileContainer {
   background-color: #e1d9ca;
   border-radius: 5px;
   box-shadow: 0 5px 10px 0 #666;
+}
+
+ul.pagebtn {
+  padding: 0%;
+}
+
+div.mealchoicebuttons button {
+  width: 120px;
+  height: 35px;
 }
