@@ -29,18 +29,24 @@ body {
   font-family: "Catamaran";
 }
 h1 {
-  font-size: 200px;
+  font-size: 12.5rem;
 }
 .pages {
   text-decoration: underline;
 }
 #addrecipe {
-  padding: 20px;
+  padding: 1.25rem;
   border-color: #e1d9ca;
   background-color: #e1d9ca;
-  box-shadow: 0 5px 10px 0 #666;
-  border-radius: 5px;
-  width: 500px;
+  box-shadow: 0 0.313rem 0.625rem 0 #666;
+  border-radius: 0.313rem;
+  width: 31.25rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: flex-end;
+  flex-direction: row-reverse;
 }
 /* .content{
   margin-top: 10%;
@@ -48,54 +54,60 @@ h1 {
 #pagename {
   text-align: center;
   color: var(--green);
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 900;
   background-color: #e1d9ca;
-  margin-top: -30px;
-  border-bottom: solid 5px rgb(221, 221, 212);
+  margin-top: -1.875rem;
+  border-bottom: solid 0.313rem #e1d9ca;
+  box-shadow: 0 0.3rem 0.3rem#666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   /*  */
 }
 .recipe {
   display: flex;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   justify-content: center;
   align-items: center;
+  display: flex;
 }
 #contact-form label {
   text-align: left;
-  padding-right: 10px;
-  margin-top: 10px;
+  padding-right: 0.625rem;
+  margin-top: 0.625rem;
 }
 #addrecipe label {
   text-align: left;
-  padding-right: 10px;
+  padding-right: 0.625rem;
 }
 
 #addrecipe textarea {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 #addrecipe input {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 #contact-form button {
   background-color: var(--green);
   color: white;
-  border: solid 2px var(--green);
-  border-radius: 5px;
-  margin: 5px;
+  border: solid 0.125rem var(--green);
+  border-radius: 0.313rem;
+  margin: 0.313rem;
   transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s;
   display: flex;
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 #addrecipe button {
   background-color: var(--green);
   color: white;
-  border: solid 2px var(--green);
-  border-radius: 5px;
-  margin: 10px;
+  border: solid 0.125rem var(--green);
+  border-radius: 0.313rem;
+  margin: 0.625rem;
   transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s;
 }
@@ -106,14 +118,14 @@ h1 {
 #contact-form button:active {
   background-color: white;
   color: var(--green);
-  box-shadow: 0 5px 10px 0 #666;
-  transform: translateY(1px);
+  box-shadow: 0 0.313rem 0.625rem 0 #666;
+  transform: translateY(0.063rem);
 }
 #contact-form button:focus {
   background-color: white;
   color: var(--green);
-  box-shadow: 0 5px 10px 0 #666;
-  transform: translateY(1px);
+  box-shadow: 0 0.313rem 0.625rem 0 #666;
+  transform: translateY(0.063rem);
 }
 #addrecipe button:hover {
   background-color: white;
@@ -123,39 +135,39 @@ h1 {
 #addrecipe button:active {
   background-color: white;
   color: var(--green);
-  box-shadow: 0 5px 10px 0 #666;
-  transform: translateY(1px);
+  box-shadow: 0 0.313rem 0.625rem 0 #666;
+  transform: translateY(0.063rem);
 }
 #addrecipe button:focus {
   background-color: white;
   color: var(--green);
-  box-shadow: 0 5px 10px 0 #666;
-  transform: translateY(1px);
+  box-shadow: 0 0.313rem 0.625rem 0 #666;
+  transform: translateY(0.063rem);
 }
 #contact-form input {
   display: flex;
-  width: 250px;
+  width: 15.625rem;
 }
 
 #contact-form {
-  padding: 20px;
+  padding: 1.25rem;
   background-color: #e1d9ca;
-  border: solid #e1d9ca 2px;
-  border-radius: 5px;
-  width: 300px;
+  border: solid #e1d9ca 0.125;
+  border-radius: 0.313rem;
+  width: 18.75rem;
   justify-content: center;
   align-items: center;
   margin: auto;
   text-align: left;
-  margin-top: 20px;
-  box-shadow: 0 5px 10px 0 #666;
+  margin-top: 1.25rem;
+  box-shadow: 0 0.313rem 0.625rem 0 #666;
 }
 .mealchoicebuttons {
   display: flex;
   justify-content: center;
 }
 #directions {
-  height: 200px;
+  height: 12.5rem;
 }
 div.navbg {
   display: flex;
@@ -167,9 +179,10 @@ div.navbg {
 }
 div.pagelist {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  align-content: center;
   justify-content: center;
-  height: 100px;
 }
 div.header {
   display: flex;
@@ -193,8 +206,8 @@ h2.h2el {
   display: flex;
   text-align: center;
   color: #30602f;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 1.875rem;
+  padding-left: 1.875rem;
 }
 h2.h2el2 {
   display: flex;
@@ -204,34 +217,36 @@ h2.h2el2 {
 ul li button {
   background-color: var(--green);
   color: white;
-  border: solid 2px var(--green);
-  border-radius: 5px;
-  width: 120px;
-  height: 35px;
+  border: solid 0.125rem var(--green);
+  border-radius: 0.313rem;
+  width: 7.5rem;
+  height: 2.188rem;
   transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  align-content: center;
   justify-content: center;
 }
 ul li button:hover {
   background-color: white;
   color: var(--green);
-  border: solid 2px var(--green);
-  border-radius: 5px;
+  border: solid 0.125rem var(--green);
+  border-radius: 0.313rem;
 }
 
 ul li button:active {
   background-color: white;
   color: var(--green);
-  box-shadow: 0 5px 10px 0 #666;
-  transform: translateY(1px);
+  box-shadow: 0 0.313rem 0.625rem 0 #666;
+  transform: translateY(0.063rem);
 }
 ul li button:focus {
   background-color: white;
   color: var(--green);
-  box-shadow: 0 5px 10px 0 #666;
-  transform: translateY(1px);
+  box-shadow: 0 0.313rem 0.625rem 0 #666;
+  transform: translateY(0.063rem);
 }
 .d-flex {
   display: flex;
@@ -239,23 +254,27 @@ ul li button:focus {
 
 section.fullheader div.pagelist {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 div.fileUploader.imageuploader button {
   background-color: var(--green);
   color: white;
-  border: solid 2px var(--green);
-  border-radius: 5px;
-  margin: 10px;
+  border: solid 0.125rem var(--green);
+  border-radius: 0.313rem;
+  margin: 0.625rem;
   transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s;
 }
 div.fileUploader.imageuploader button:hover {
   background-color: white;
   color: var(--green);
-  border: solid 2px var(--green);
-  border-radius: 5px;
-  margin: 10px;
+  border: solid 0.125rem var(--green);
+  border-radius: 0.313rem;
+  margin: 0.625rem;
   transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s;
 }
@@ -263,20 +282,20 @@ div.fileUploader.imageuploader button:hover {
 div.fileUploader.imageuploader button:active {
   background-color: white;
   color: var(--green);
-  box-shadow: 0 5px 10px 0 #666;
-  transform: translateY(1px);
+  box-shadow: 0 0.313rem 0.625rem 0 #666;
+  transform: translateY(0.063rem);
 }
 div.fileUploader.imageuploader button:focus {
   background-color: white;
   color: var(--green);
-  box-shadow: 0 5px 10px 0 #666;
-  transform: translateY(1px);
+  box-shadow: 0 0.313rem 0.625rem 0 #666;
+  transform: translateY(0.063rem);
 }
 
 section.recipe div form div.fileUploader.imageuploader div.fileContainer {
   background-color: #e1d9ca;
-  border-radius: 5px;
-  box-shadow: 0 5px 10px 0 #666;
+  border-radius: 0.313rem;
+  box-shadow: 0 0.313rem 0.625rem 0 #666;
 }
 
 ul.pagebtn {
@@ -284,6 +303,6 @@ ul.pagebtn {
 }
 
 div.mealchoicebuttons button {
-  width: 120px;
-  height: 35px;
+  width: 7.5rem;
+  height: 2.188rem;
 }
