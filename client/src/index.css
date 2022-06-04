@@ -112,8 +112,8 @@ h1 {
   -webkit-transition-duration: 0.4s;
 }
 #contact-form button:hover {
-  background-color: rgb(255, 255, 255);
-  color: var(--green);
+  background-color: var(--green);
+  color: white;
   box-shadow: 0 0.313rem 0.625rem 0 #666;
   transform: translateY(0.063rem);
 }
@@ -130,8 +130,8 @@ h1 {
   transform: translateY(0.063rem);
 }
 #addrecipe button:hover {
-  background-color: white;
-  color: var(--green);
+  background-color: var(--green);
+  color: white;
   box-shadow: 0 0.313rem 0.625rem 0 #666;
   transform: translateY(0.063rem);
 }
@@ -234,8 +234,8 @@ ul li button {
   justify-content: center;
 }
 ul li button:hover {
-  background-color: white;
-  color: var(--green);
+  background-color: var(--green);
+  color: white;
   border: solid 0.125rem var(--green);
   border-radius: 0.313rem;
   box-shadow: 0 0.313rem 0.625rem 0 #666;
@@ -276,8 +276,8 @@ div.fileUploader.imageuploader button {
   -webkit-transition-duration: 0.4s;
 }
 div.fileUploader.imageuploader button:hover {
-  background-color: white;
-  color: var(--green);
+  background-color: var(--green);
+  color: white;
   border: solid 0.125rem var(--green);
   border-radius: 0.313rem;
   margin: 0.625rem;
