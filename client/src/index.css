@@ -41,12 +41,6 @@ h1 {
   box-shadow: 0 0.313rem 0.625rem 0 #666;
   border-radius: 0.313rem;
   width: 31.25rem;
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: flex-end;
-  flex-direction: row-reverse;
 }
 /* .content{
   margin-top: 10%;
@@ -306,6 +300,12 @@ section.recipe div form div.fileUploader.imageuploader div.fileContainer {
   background-color: #e1d9ca;
   border-radius: 0.313rem;
   box-shadow: 0 0.313rem 0.625rem 0 #666;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 ul.pagebtn {
@@ -315,4 +315,22 @@ ul.pagebtn {
 div.mealchoicebuttons button {
   width: 7.5rem;
   height: 2.188rem;
+}
+
+section.recipe div div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+div.fileUploader.imageuploader {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
