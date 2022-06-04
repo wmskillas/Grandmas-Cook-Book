@@ -22,9 +22,10 @@ function App() {
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
-    <body className='bodybg'>
+    <section className='bodybg' >
       <div className='navbg'>
         <Navbar
+        
           pages={pages}
           setCurrentPage={setCurrentPage}
           currentPage={currentPage}
@@ -34,7 +35,7 @@ function App() {
       <div>
         <Page currentPage={currentPage}></Page>
       </div>
-    </body>
+    </section>
   );
 }
 

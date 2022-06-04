@@ -32,34 +32,42 @@ function AddRecipe() {
       console.log("Submit Form", formState);
     }
   };
-  const UploadComponent = (props) => (
-    <form>
-      {/* <input id='urlInput' type='text' onChange={props.onUrlChange} value={props.url}></input> */}
-      <ImageUploader
-        className='imageuploader'
-        key='image-uploader'
-        withIcon={true}
-        single={true}
-        withPreview={true}
-        label='Maximum size file:5MB'
-        buttonText='Choose an image'
-        onChange={props.onImage}
-        imgExtension={[".jpg", ".png", ".jpeg"]}
-        maxFileSize={5242880}
-      ></ImageUploader>
-    </form>
-  );
-  return (
-    <section class='recipe'>
-      <form className='bg-light' id='addrecipe' onSubmit={handleSubmit}>
+
+ const UploadComponent= props =>(
+  <form>
+  {/* <input id='urlInput' type='text' onChange={props.onUrlChange} value={props.url}></input> */}
+  <ImageUploader
+  className='imageuploader'
+  key='image-uploader'
+  withIcon={true}
+  single={true}
+  withPreview={true}
+  label='Maximum size file:5MB'
+  buttonText="Choose an image"
+  onChange={props.onImage}
+  imgExtension={['.jpg', '.png', '.jpeg']}
+  maxFileSize={5242880}></ImageUploader>
+  </form>
+ );
+return (  
+    <section className="recipe">
+      <div><UploadComponent className='imageuploader' onUrlChange={onUrlChange} onImage={onImage}
+        url={url}
+        ></UploadComponent>
+      <form className='bg-light'id="addrecipe" onSubmit={handleSubmit}>
         <div>
-          <div class='mealchoicebuttons'>
-            <button>Breakfast</button>
-            <button>Lunch</button>
-            <button>Dinner</button>
-          </div>
-          <label htmlFor='name'>Title:</label>
-          <input type='text' name='title' defaultValue={title}></input>
+            <div className="mealchoicebuttons">
+                <button>Breakfast</button>
+                <button>Lunch</button>
+                <button>Dinner</button>
+            </div>
+          <label htmlFor="name">Title:</label>
+          <input
+            type="text"
+            name="title"
+            defaultValue={title}
+           ></input>
+
 
           <label htmlFor='ingredients'>Ingredients:</label>
           <textarea
@@ -82,16 +90,14 @@ function AddRecipe() {
             defaultValue={directions}
           />
         </div>
-        <UploadComponent
-          className='imageuploader'
-          onUrlChange={onUrlChange}
-          onImage={onImage}
-          url={url}
-        ></UploadComponent>
-        <button className='submit' type='submit'>
-          Submit
-        </button>
-      </form>
+
+       
+        
+        <button className= "submit" type="submit">Submit</button>
+         </form>
+      </div>
+      
+
     </section>
   );
 }
