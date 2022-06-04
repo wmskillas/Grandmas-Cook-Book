@@ -33,71 +33,69 @@ function AddRecipe() {
     }
   };
 
- const UploadComponent= props =>(
-  <form>
-  {/* <input id='urlInput' type='text' onChange={props.onUrlChange} value={props.url}></input> */}
-  <ImageUploader
-  className='imageuploader'
-  key='image-uploader'
-  withIcon={true}
-  single={true}
-  withPreview={true}
-  label='Maximum size file:5MB'
-  buttonText="Choose an image"
-  onChange={props.onImage}
-  imgExtension={['.jpg', '.png', '.jpeg']}
-  maxFileSize={5242880}></ImageUploader>
-  </form>
- );
-return (  
-    <section className="recipe">
-      <div><UploadComponent className='imageuploader' onUrlChange={onUrlChange} onImage={onImage}
-        url={url}
+  const UploadComponent = (props) => (
+    <form>
+      {/* <input id='urlInput' type='text' onChange={props.onUrlChange} value={props.url}></input> */}
+      <ImageUploader
+        className='imageuploader'
+        key='image-uploader'
+        withIcon={true}
+        single={true}
+        withPreview={true}
+        label='Maximum size file:5MB'
+        buttonText='Choose an image'
+        onChange={props.onImage}
+        imgExtension={[".jpg", ".png", ".jpeg"]}
+        maxFileSize={5242880}
+      ></ImageUploader>
+    </form>
+  );
+  return (
+    <section className='recipe'>
+      <div>
+        <UploadComponent
+          className='imageuploader'
+          onUrlChange={onUrlChange}
+          onImage={onImage}
+          url={url}
         ></UploadComponent>
-      <form className='bg-light'id="addrecipe" onSubmit={handleSubmit}>
-        <div>
-            <div className="mealchoicebuttons">
-                <button>Breakfast</button>
-                <button>Lunch</button>
-                <button>Dinner</button>
+        <form className='' id='addrecipe' onSubmit={handleSubmit}>
+          <div>
+            <div className='mealchoicebuttons'>
+              <button>Breakfast</button>
+              <button>Lunch</button>
+              <button>Dinner</button>
             </div>
-          <label htmlFor="name">Title:</label>
-          <input
-            type="text"
-            name="title"
-            defaultValue={title}
-           ></input>
+            <label htmlFor='name'>Title:</label>
+            <input type='text' name='title' defaultValue={title}></input>
 
+            <label htmlFor='ingredients'>Ingredients:</label>
+            <textarea
+              id='ingredients'
+              type='textarea'
+              name='ingredients'
+              rows='4'
+              maxLength={500}
+              defaultValue={ingredients}
+            />
 
-          <label htmlFor='ingredients'>Ingredients:</label>
-          <textarea
-            id='ingredients'
-            type='textarea'
-            name='ingredients'
-            rows='4'
-            maxLength={500}
-            defaultValue={ingredients}
-          />
+            <label htmlFor='directions'>Directions:</label>
+            <textarea
+              id='directions'
+              name='directions'
+              type='textarea'
+              maxLength={500}
+              rows='5'
+              cols='5'
+              defaultValue={directions}
+            />
+          </div>
 
-          <label htmlFor='directions'>Directions:</label>
-          <textarea
-            id='directions'
-            name='directions'
-            type='textarea'
-            maxLength={500}
-            rows='5'
-            cols='5'
-            defaultValue={directions}
-          />
-        </div>
-
-       
-        
-        <button className= "submit" type="submit">Submit</button>
-         </form>
+          <button className='submit' type='submit'>
+            Submit
+          </button>
+        </form>
       </div>
-      
-
     </section>
   );
 }

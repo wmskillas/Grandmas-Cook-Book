@@ -1,41 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 /* * {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -44,6 +6,7 @@
 nav {
   /* background-color: #91c07d; */
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   text-align: center;
   align-items: center;
@@ -55,47 +18,64 @@ nav {
 
 .pagebtn {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-.mx-5 {
-  margin: 30px;
-  display: flex;
-}
+
 nav li {
-  display: flex;
-  flex-direction: column;
-  font-size: 18px;
+  font-size: 1.125rem;
   list-style: none;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon {
   width: 11rem;
-
-  justify-content: left;
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 .header {
   display: flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
   justify-content: center;
   align-items: center;
 }
 
 .h2el2 {
   font-style: italic;
-  font-size: 20px;
+  font-size: 1.25rem;
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .bodybg {
   /* background-color: #8c6042; */
   background-image: url("./assets/images/H-calum-lewis-vA1L1jRTM70-unsplash.jpg");
   background-size: 100%;
-  background-attachment: fixed;
 }
 
-#pagename button:hover {
-  background-color: lightgrey;
-  color: black;
-}
 /* #pagename button:active {
   background-color: rgb(221, 221, 212);
   box-shadow: 0 5px #666;
@@ -104,43 +84,10 @@ nav li {
 .navbg {
   background-color: #e1d9ca;
   display: flex;
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  border-bottom: solid white 5px;
-}
-
-@media only screen and (max-width: 900px) {
-  .h2el {
-    font-size: large;
-  }
-  .h2el2 {
-    font-size: large;
-  }
-  .icon {
-    width: 15rem;
-  }
-  nav li {
-    font-size: 10px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .h2el {
-    font-size: medium;
-  }
-  .h2el2 {
-    font-size: medium;
-  }
-  .icon {
-    width: 12rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-shrink: inherit;
-  }
-  nav li {
-    font-size: 10px;
-  }
-}
-
-/* space-around navbar buttons */
-ul.d-flex.flex-row.align-items-baseline {
-  justify-content: space-around;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
