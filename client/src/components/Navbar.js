@@ -92,6 +92,7 @@ function Nav(props) {
       <nav>
         <div className='header'>
           <img className='icon' alt='grandmas-cook-book.img' src={Icon}></img>
+          
           <div className='HeaderWords'>
             <h2 className='h2el'>
               Welcome to the one and only cook book you will ever need!
@@ -100,12 +101,13 @@ function Nav(props) {
               Like Grandma always says "It takes a village"
             </h2>
           </div>
+          <br></br>
           <img className='icon' alt='grandmas-cook-book.img' src={Icon}></img>
         </div>
         <br></br>
 
         <div className='pagelist'>
-          <br></br>
+       
           <ul className='pagebtn'>
             {pages.map((Page) => (
               <li

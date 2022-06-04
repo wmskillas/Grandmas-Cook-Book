@@ -139,6 +139,7 @@ h1 {
   align-items: center;
   margin: auto;
   text-align: left;
+  margin-top:20px;
 }
 .mealchoicebuttons {
   display: flex;
@@ -183,6 +184,8 @@ h2.h2el {
   display: flex;
   text-align: center;
   color: #30602f;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 h2.h2el2 {
   display: flex;
