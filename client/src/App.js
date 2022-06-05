@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {} from 'react-router-dom';
 import Page from "./components/Page";
 import Navbar from "./components/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -22,7 +23,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
-    <body className='bodybg' >
+    <section className='bodybg' >
       <div className='navbg'>
         <Navbar
         
@@ -35,7 +36,7 @@ function App() {
       <main>
         <Page currentPage={currentPage}></Page>
       </main>
-     </body>
+     </section>
    
   );
 }

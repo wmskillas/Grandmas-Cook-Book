@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import ImageUploader from "react-images-upload";
+// import axios from 'axios';
+
 
 function AddRecipe() {
-  const [formState] = useState({
+  const [input,setInput] = useState({
     title: "",
     ingredients: "",
     directions: "",
   });
-  const [errorMessage, setErrorMessage] = useState("");
-  const { title, ingredients, directions } = formState;
+  const [setErrorMessage] = useState("");
+  
 
   const [url, setImageURL] = useState(undefined);
   const onUrlChange = (e) => {
     setImageURL(e.target.value);
   };
-  const onImage = async (failedImages, successImages) => {
+  const onImage = async (successImages) => {
     if (!url) {
       console.log("missing URL");
       setErrorMessage("missing a URL to upload to");
@@ -26,13 +28,26 @@ function AddRecipe() {
       console.log("error in upload");
     }
   };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!errorMessage) {
-      console.log("Submit Form", formState);
-    }
+  function handleChange (event) {
+  
+    const { name,value} = event.target;
+   setInput(prevInput=>{
+     return{
+       ...prevInput,
+       [name]: value
+     }
+   })
   };
-
+function handleClick(event){
+  event.preventDefault();
+  const newRecipe={
+    title:input.title,
+    ingredients:input.ingredients,
+    directions:input.directions
+  }
+  console.log(newRecipe);
+  // .post('http://localhost:3001/',newRecipe)
+}
   const UploadComponent = (props) => (
     <form>
       {/* <input id='urlInput' type='text' onChange={props.onUrlChange} value={props.url}></input> */}
@@ -59,7 +74,7 @@ function AddRecipe() {
           onImage={onImage}
           url={url}
         ></UploadComponent>
-        <form className='' id='addrecipe' onSubmit={handleSubmit}>
+        <form className='' id='addrecipe' onChange={handleChange}>
           <div>
             <div className='mealchoicebuttons'>
               <button>Breakfast</button>
@@ -67,31 +82,37 @@ function AddRecipe() {
               <button>Dinner</button>
             </div>
             <label htmlFor='name'>Title:</label>
-            <input type='text' name='title' defaultValue={title}></input>
+            <input type='text' name='title' value={input.title}></input>
 
             <label htmlFor='ingredients'>Ingredients:</label>
             <textarea
+              onChange={handleChange}
+              value={input.ingredients}
+              
               id='ingredients'
               type='textarea'
               name='ingredients'
               rows='4'
               maxLength={500}
-              defaultValue={ingredients}
+              
             />
 
             <label htmlFor='directions'>Directions:</label>
             <textarea
+              onChange={handleChange}
+              value={input.directions}
+              
               id='directions'
               name='directions'
               type='textarea'
               maxLength={500}
               rows='5'
               cols='5'
-              defaultValue={directions}
+              
             />
           </div>
 
-          <button className='submit' type='submit'>
+          <button onClick={handleClick} className='submit' type='submit'>
             Submit
           </button>
         </form>
