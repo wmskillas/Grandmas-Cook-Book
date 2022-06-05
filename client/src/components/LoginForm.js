@@ -40,7 +40,7 @@ function Contact() {
   };
 
   return (
-    <section>
+    <section className="loginpage">
       <form id="contact-form" onSubmit={handleSubmit}>
         
         <div>
