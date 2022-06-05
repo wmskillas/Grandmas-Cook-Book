@@ -46,7 +46,7 @@ function handleClick(event){
     directions:input.directions
   }
   console.log(newRecipe);
-  // .post('http://localhost:3001/',newRecipe)
+
 }
   const UploadComponent = (props) => (
     <form>

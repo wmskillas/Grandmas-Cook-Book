@@ -1,5 +1,11 @@
 const router = require("express").Router();
-const breakfast= require('../../models/Breakfast')
+const breakfast= require('../../models/Breakfast');
+router.route('/').get ((req,res)=>{
+  breakfast.find()
+  .then(breakfasts => res.json(exercises))
+  .catch(error =>res.status(400).json('Error'))
+});
+
 const {
   getBreakfasts,
   createBreakfast,
