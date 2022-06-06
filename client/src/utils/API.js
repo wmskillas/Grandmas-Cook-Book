@@ -19,7 +19,7 @@ export const getSingleBreakfast = (breakfastId) => {
 };
 
 export const createBreakfast = (breakfastData) => {
-  return fetch("/api/breakfast", {
+  return fetch("http://localhost:5000/api/breakfast", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -230,6 +230,11 @@ export const removeDinnerReaction = (dinnerId, reactionId, token) => {
   });
 };
 
+const api = {
+  createBreakfast,
+};
+
+export default api;
 ////////////////////////////////////////////////////////////////////////////
 
 //Need to add User routes

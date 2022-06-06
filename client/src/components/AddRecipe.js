@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ImageUploader from "react-images-upload";
-// import axios from 'axios';
+import axios from 'axios';
 
 
 function AddRecipe() {
@@ -38,7 +38,7 @@ function AddRecipe() {
      }
    })
   };
-function handleClick(event){
+async function handleClick(event){
   event.preventDefault();
   const newRecipe={
     title:input.title,
@@ -46,6 +46,9 @@ function handleClick(event){
     directions:input.directions
   }
   console.log(newRecipe);
+  await axios.post(`http://localhost:5000/api/breakfast`, newRecipe).then((response) => {
+    console.log(response);
+  })
 
 }
   const UploadComponent = (props) => (
