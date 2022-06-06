@@ -28,7 +28,7 @@ body {
 
   font-family: "Catamaran";
 }
-.loginpage{
+.loginpage {
   min-height: 50rem;
 }
 h1 {
@@ -321,5 +321,22 @@ div.mealchoicebuttons button {
 }
 
 .cardSizing {
-  width: 35rem;
+  width: 30rem;
+}
+
+img.card-img-top {
+  width: 30rem;
+  height: 20rem;
+}
+
+section.lunch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+}
+div.flex-row.meal.card-body {
+  box-shadow: 0 0.313rem 0.625rem 0 #666;
 }
