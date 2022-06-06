@@ -18,8 +18,6 @@ function Page({ currentPage }) {
         return <Lunch />;
       case "Dinner":
         return <Dinner />;
-      case "Login":
-        return <LogIn />;
       default:
         return <LogIn />;
     }
