@@ -1,10 +1,4 @@
 const router = require("express").Router();
-const breakfast= require('../../models/Breakfast');
-router.route('/').get ((req,res)=>{
-  breakfast.find()
-  .then(breakfasts => res.json(exercises))
-  .catch(error =>res.status(400).json('Error'))
-});
 
 const {
   getBreakfasts,
@@ -17,6 +11,7 @@ const {
 } = require("../../controllers/breakfast-controller");
 
 router.route("/").get(getBreakfasts).post(createBreakfast);
+console.log('breakfast-routes');
 
 router
   .route("/:breakfastId")

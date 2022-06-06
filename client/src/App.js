@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import {} from 'react-router-dom';
 import Page from "./components/Page";
 import Navbar from "./components/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -19,11 +18,24 @@ function App() {
       name: "Login",
     },
   ]);
+  
+// const fetchData = async () => {
+//   const newData = await fetch('/api', {
+//     method: 'POST',
+//     headers: {
+//       'Content Type': 'application/json',
+//       'Accept': 'application/json'
+//     }
+//   })
+//   .then(res => res.json())
+//   console.log(newData);
+//   setReturnedData(newData.result)
+// }
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
-    <section className='bodybg' >
+    <body className='bodybg' >
       <div className='navbg'>
         <Navbar
         
@@ -36,7 +48,7 @@ function App() {
       <main>
         <Page currentPage={currentPage}></Page>
       </main>
-     </section>
+     </body>
    
   );
 }

@@ -1,48 +1,47 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import { validateEmail } from '../utils/helpers';
+import { validateEmail } from "../utils/helpers";
 
 function Contact() {
   const [formState, setFormState] = useState({
-    email: '',
-    password: '',
+    email: "",
+    password: "",
   });
 
-  const [errorMessage, setErrorMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState("");
   const { email, password } = formState;
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!errorMessage) {
-      console.log('Logged In', formState);
-    }
+      console.log("Logged In", formState);
+    } else console.log(errorMessage);
   };
 
   const handleChange = (e) => {
-    if (e.target.email === 'email') {
+    if (e.target.email === "email") {
       const isValid = validateEmail(e.target.value);
       if (!isValid) {
-        setErrorMessage('Your email is invalid.');
+        setErrorMessage("Your email is invalid.");
       } else {
-        setErrorMessage('');
+        setErrorMessage("");
       }
     } else {
       if (!e.target.value.length) {
         setErrorMessage(`${e.target.name} is required.`);
       } else {
-        setErrorMessage('');
+        setErrorMessage("");
       }
     }
     if (!errorMessage) {
       setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log('Handle Form', formState);
+      console.log("Handle Form", formState);
     }
   };
 
   return (
-    <section className="loginpage">
+    <section>
       <form id="contact-form" onSubmit={handleSubmit}>
-        
         <div>
           <label htmlFor="email">Email address:</label>
           <input
@@ -56,7 +55,7 @@ function Contact() {
           <label htmlFor="message">Password:</label>
           <input
             name="password"
-           type='password'
+            type="password"
             defaultValue={password}
             onBlur={handleChange}
           />
