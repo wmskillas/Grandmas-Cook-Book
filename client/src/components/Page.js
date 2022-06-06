@@ -5,7 +5,7 @@ import Breakfast from "./Breakfast";
 import Lunch from "./Lunch";
 import Dinner from "./Dinner";
 import { capitalizeFirstLetter } from "../utils/helpers";
-import Contact from "./LoginForm";
+import LogIn from "./LoginForm";
 
 function Page({ currentPage }) {
   const renderPage = () => {
@@ -19,9 +19,9 @@ function Page({ currentPage }) {
       case "Dinner":
         return <Dinner />;
       case "Login":
-        return <Contact />;
+        return <LogIn />;
       default:
-        return <AddRecipe />;
+        return <LogIn />;
     }
   };
 
