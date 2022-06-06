@@ -12,20 +12,22 @@ function Lunch(){
                 <div className="ingredients card-text">
                     <h3>Ingredients:</h3>
                     {/* {ingredients} */}
-                    <p>1 pound ground beef
-                         1/3 cup chopped onion
-                        1/2 cup chopped green pepper
-                        2 cups cooked long grain rice
-                        1 can (14-1/2 ounces) diced tomatoes, undrained
-                        1 can (11 ounces) whole kernel corn, drained
-                        1 can (2-1/4 ounces) sliced ripe olives, drained
-                        6 bacon strips, cooked and crumbled
-                        2 teaspoons chili powder
-                        1 teaspoon garlic powder
-                        1/2 teaspoon salt
-                        1-1/2 cups shredded cheddar cheese, divided
-                        1/2 cup dry bread crumbs
-                        1 tablespoon butter, melted</p>
+                    <ul>
+                    <li>1 pound ground beef</li>
+                    <li>1/3 cup chopped onion</li>
+                    <li> 1/2 cup chopped green pepper</li>
+                    <li>2 cups cooked long grain rice</li>
+                    <li>1 can (14-1/2 ounces) diced tomatoes, undrained</li>
+                    <li>1 can (11 ounces) whole kernel corn, drained</li>
+                    <li>1 can (2-1/4 ounces) sliced ripe olives, drained</li>
+                    <li>6 bacon strips, cooked and crumbled</li>
+                    <li>2 teaspoons chili powder</li>
+                    <li> 1 teaspoon garlic powder</li>
+                    <li>1/2 teaspoon salt</li>
+                    <li>1-1/2 cups shredded cheddar cheese, divided</li>
+                    <li>1/2 cup dry bread crumbs</li>
+                    <li>1 tablespoon butter, melted</li>
+                    </ul>
                 </div>
                 <div className="directions card-body">
                     {/* {directions} */}
@@ -48,14 +50,16 @@ function Lunch(){
                 <div className="ingredients card-text">
                     <h3>Ingredients:</h3>
                     {/* {ingredients} */}
-                    <p>2 tablespoons butter
-        1 tablespoon all-purpose flour
-        2 cups tomato juice
-        1/2 cup water
-        2 tablespoons sugar
-        1/8 teaspoon salt
-        3/4 cup cooked wide egg noodles
-        Chopped fresh parsley, optional</p>
+                    <ul>
+                    <li>2 tablespoons butter</li>
+                    <li>1 tablespoon all-purpose flour</li>
+                    <li>2 cups tomato juice</li>
+                    <li>1/2 cup water</li>
+                    <li>2 tablespoons sugar</li>
+                    <li>1/8 teaspoon salt</li>
+                    <li>3/4 cup cooked wide egg noodles</li>
+                    <li>Chopped fresh parsley, optional</li>
+                    </ul>
                 </div>
                 <div className="directions card-body">
                     {/* {directions} */}
@@ -75,14 +79,16 @@ function Lunch(){
                 <div className="ingredients card-text">
                     <h3>Ingredients:</h3>
                     {/* {ingredients} */}
-                    <p>4 beef tenderloin steaks (6 ounces each)
-        3/4 teaspoon salt, divided
-        1/2 teaspoon pepper, divided
-        2 tablespoons olive oil, divided
-        1-3/4 cups sliced fresh mushrooms
-        1 medium onion, chopped
-        1 package (17.3 ounces) frozen puff pastry, thawed
-        1 large egg, lightly beaten</p>
+                    <ul>
+                        <li>4 beef tenderloin steaks (6 ounces each)</li>
+                        <li>3/4 teaspoon salt, divided</li>
+                        <li>1/2 teaspoon pepper, divided</li>
+                        <li>2 tablespoons olive oil, divided</li>
+                        <li>1-3/4 cups sliced fresh mushrooms</li>
+                        <li>1 medium onion, chopped</li>
+                        <li>1 package (17.3 ounces) frozen puff pastry, thawed</li>
+                        <li>1 large egg, lightly beaten</li>
+                    </ul>
                 </div>
                 <div className="directions card-body">
                     {/* {directions} */}
