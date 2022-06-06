@@ -15,6 +15,7 @@ function Contact() {
     e.preventDefault();
     if (!errorMessage) {
       console.log("Logged In", formState);
+      alert("You are now logged in!");
     } else console.log(errorMessage);
   };
 
