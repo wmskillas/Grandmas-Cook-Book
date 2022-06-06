@@ -10,6 +10,8 @@ import LogIn from "./LoginForm";
 function Page({ currentPage }) {
   const renderPage = () => {
     switch (currentPage.name) {
+      case 'Login':
+      return <LogIn/>;
       case "Add recipe":
         return <AddRecipe />;
       case "Breakfast":
@@ -18,8 +20,9 @@ function Page({ currentPage }) {
         return <Lunch />;
       case "Dinner":
         return <Dinner />;
+      
       default:
-        return <LogIn />;
+        return <AddRecipe />;
     }
   };
 
