@@ -349,3 +349,12 @@ section.breakfast {
   align-content: center;
   flex-wrap: wrap;
 }
+
+section.dinner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+}
