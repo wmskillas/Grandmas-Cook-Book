@@ -91,3 +91,7 @@ nav li {
   justify-content: center;
   align-items: center;
 }
+
+.imgsizing {
+  min-width: 5rem;
+}
