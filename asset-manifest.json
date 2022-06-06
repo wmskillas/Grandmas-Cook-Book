@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Grandmas-Cook-Book/static/css/main.6a086e27.css",
+    "main.js": "/Grandmas-Cook-Book/static/js/main.756627a9.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/Grandmas-Cook-Book/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/H-calum-lewis-vA1L1jRTM70-unsplash.jpg": "/Grandmas-Cook-Book/static/media/H-calum-lewis-vA1L1jRTM70-unsplash.1d53d1fb2a42769f1221.jpg",
+    "static/media/GCBgreen.png": "/Grandmas-Cook-Book/static/media/GCBgreen.a0c0fafc981429f61e11.png",
+    "static/media/UploadIcon.svg": "/Grandmas-Cook-Book/static/media/UploadIcon.469126df4127e870c21611e576b85d00.svg",
+    "index.html": "/Grandmas-Cook-Book/index.html",
+    "main.6a086e27.css.map": "/Grandmas-Cook-Book/static/css/main.6a086e27.css.map",
+    "main.756627a9.js.map": "/Grandmas-Cook-Book/static/js/main.756627a9.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/Grandmas-Cook-Book/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a086e27.css",
+    "static/js/main.756627a9.js"
+  ]
+}
