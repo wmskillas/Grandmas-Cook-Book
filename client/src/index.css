@@ -314,6 +314,9 @@ section.recipe div form div.fileUploader.imageuploader div.fileContainer {
 ul.pagebtn {
   padding: 0%;
 }
+div.mealchoicebuttons {
+  width: 18rem;
+}
 
 div.mealchoicebuttons button {
   width: 7.5rem;
@@ -321,12 +324,7 @@ div.mealchoicebuttons button {
 }
 
 .cardSizing {
-  width: 30rem;
-}
-
-img.card-img-top {
-  width: 30rem;
-  height: 20rem;
+  width: 24rem;
 }
 
 section.lunch {
@@ -357,4 +355,24 @@ section.dinner {
   align-items: flex-start;
   align-content: center;
   flex-wrap: wrap;
+}
+
+section.recipe {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+form#addrecipe {
+  width: 20rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }

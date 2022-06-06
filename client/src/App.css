@@ -72,8 +72,8 @@ nav li {
 
 .bodybg {
   /* background-color: #8c6042; */
-  background-image: url("./assets/images/H-calum-lewis-vA1L1jRTM70-unsplash.jpg");
-  background-size: 100%;
+  background-image: url("./assets/images/H-1920-calum-lewis-vA1L1jRTM70-unsplash.jpg");
+  background-size: cover;
 }
 
 /* #pagename button:active {
