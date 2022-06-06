@@ -37,6 +37,64 @@ function Lunch(){
                 </div>
             </div>
             </div>
+            <br/>
+            <div className='card cardSizing'>
+           <img className='' src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Grandma-s-Tomato-Soup_EXPS_CF219_3984_B12_18_1b-5.jpg?fit=700,1024" class="card-img-top" alt="..."></img>
+            <div className='flex-row meal card-body'>
+                <div className="title card-title">
+                    {/* {title} */}
+                    <h3>Grandma's Tomato Soup</h3>
+                </div>
+                <div className="ingredients card-text">
+                    <h3>Ingredients:</h3>
+                    {/* {ingredients} */}
+                    <p>2 tablespoons butter
+        1 tablespoon all-purpose flour
+        2 cups tomato juice
+        1/2 cup water
+        2 tablespoons sugar
+        1/8 teaspoon salt
+        3/4 cup cooked wide egg noodles
+        Chopped fresh parsley, optional</p>
+                </div>
+                <div className="directions card-body">
+                    {/* {directions} */}
+                    <h3>Directions:</h3>
+                    <p>PIn a saucepan over medium heat, melt butter. Add flour; stir to form a smooth paste. Gradually add tomato juice and water, stirring constantly; bring to a boil. Cook and stir until thickened, about 2 minutes. Add sugar and salt. Stir in egg noodles and heat through. If desired, sprinkle with parsley.</p>
+                </div>
+            </div>
+            </div>
+            <br/>
+            <div className='card cardSizing'>
+           <img className='' src="https://images.unsplash.com/photo-1546964053-d018e345e490?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" class="card-img-top" alt="..."></img>
+            <div className='flex-row meal card-body'>
+                <div className="title card-title">
+                    {/* {title} */}
+                    <h3>Classic Beef Wellingtons</h3>
+                </div>
+                <div className="ingredients card-text">
+                    <h3>Ingredients:</h3>
+                    {/* {ingredients} */}
+                    <p>4 beef tenderloin steaks (6 ounces each)
+        3/4 teaspoon salt, divided
+        1/2 teaspoon pepper, divided
+        2 tablespoons olive oil, divided
+        1-3/4 cups sliced fresh mushrooms
+        1 medium onion, chopped
+        1 package (17.3 ounces) frozen puff pastry, thawed
+        1 large egg, lightly beaten</p>
+                </div>
+                <div className="directions card-body">
+                    {/* {directions} */}
+                    <h3>Directions:</h3>
+                    <p>Sprinkle steaks with 1/2 teaspoon salt and 1/4 teaspoon pepper. In a large skillet, brown steaks in 1 tablespoon oil for 2-3 minutes on each side. Remove from skillet and refrigerate until chilled.
+        In the same skillet, saute mushrooms and onion in remaining oil until tender. Stir in remaining salt and pepper; cool to room temperature.
+        Preheat oven to 425°. On a lightly floured surface, roll each puff pastry sheet into a 14x9-1/2-in. rectangle. Cut into two 7-in. squares (use scraps to make decorative cutouts if desired). Place a steak in the center of each square; top with mushroom mixture. Lightly brush pastry edges with water. Bring opposite corners of pastry over steak; pinch seams to seal tightly.
+        Place in a greased 15x10x1-in. baking pan. Cut four small slits in top of pastry. Arrange cutouts over top if desired. Brush with egg.
+        Bake 25-30 minutes or until pastry is golden brown and meat reaches desired doneness (for medium-rare, a thermometer should read 135°; medium, 140°; medium-well, 145°).</p>
+                </div>
+            </div>
+            </div>
         </section>
     )
 }
